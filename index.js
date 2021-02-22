@@ -32,7 +32,9 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   2. Which of the two uses a closure? How can you tell?
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better? 
+     
+     Counter 1 would be used if you wanted to reset your counter everytime you ran the function. While counter 2 will keep count everytime you use the function.
 */
 
 // counter1 code
