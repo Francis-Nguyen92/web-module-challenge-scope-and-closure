@@ -158,15 +158,15 @@ Use the scoreboard function below to do the following:
 
 function scoreboard(func4,func2,innings) {
   /* CODE HERE */
-  let arr = [];
-  // let Home = 0;
-  // let Away = 0;
-  for(let i = 0; i < innings; i++){
+  // let arr = [];
+  // // let Home = 0;
+  // // let Away = 0;
+  // for(let i = 0; i < innings; i++){
     
-    arr.push(`${i}, ${func4(func2()).Away}, ${func4(func2()).Home} `);
+  //   arr.push(`${i}, ${func4(func2()).Away}, ${func4(func2()).Home} `);
     
-  }
-  return arr;
+  // }
+  // return arr;
 }
  console.log(scoreboard(getInningScore,inning, 9));
 
