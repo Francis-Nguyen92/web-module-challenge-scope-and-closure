@@ -108,11 +108,12 @@ Use the getInningScore() function below to do the following:
 
 function getInningScore(func) {
   /*Your Code Here */
-
-  return {"Home": func(), "Away": func()};
+  // let Home = func();
+  // let Away = func();
+  return {"Home": func(),"Away": func()};
 
 }
-
+ console.log(getInningScore(inning));
 
 /* ⚾️⚾️⚾️ Task 5: scoreboard() ⚾️⚾️⚾️
 Use the scoreboard function below to do the following:
@@ -158,17 +159,16 @@ Use the scoreboard function below to do the following:
 function scoreboard(func4,func2,innings) {
   /* CODE HERE */
   let arr = [];
-  let Home = 0;
-  let Away = 0;
+  // let Home = 0;
+  // let Away = 0;
   for(let i = 0; i < innings; i++){
-    Home = func4(func2()):
-    Away = func4(func2());
-    return arr.push({`Inning ${i}` : `Away ${Away}` - `Home ${Home}` });
+    
+    arr.push(`${i}, ${func4(func2()).Away}, ${func4(func2()).Home} `);
+    
   }
   return arr;
 }
-
-console.log(scoreboard(getInningScore,inning, 9))
+ console.log(scoreboard(getInningScore,inning, 9));
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
